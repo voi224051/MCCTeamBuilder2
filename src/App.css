@@ -1,11 +1,11 @@
 @font-face {
   font-family: Minecraft Ten;
-  src: url('./fonts/MinecraftTen-VGORe.ttf') format('truetype');
+  src: url('./assets/fonts/MinecraftTen-VGORe.ttf') format('truetype');
 }
 
 @font-face {
   font-family: Minecraftia;
-  src: url('./fonts/Minecraftia-Regular.ttf') format('truetype');
+  src: url('./assets/fonts/Minecraftia-Regular.ttf') format('truetype');
 }
 
 body {
