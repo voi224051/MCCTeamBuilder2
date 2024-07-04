@@ -73,15 +73,16 @@ const PlayerDiv = () => {
 
     useEffect(()=>{
         console.log('Fetching players data...');
+        const db_link = import.meta.env.VITE_DATABASE_SITE
         axios
-            .get('https://voikiddo-teambuilder-db.glitch.me/players')
+            .get(`${db_link}/players`)
             .then(res =>{
                 setPlayers(res.data);
             })
 
         console.log('Fetching recent players...');
         axios
-            .get('https://voikiddo-teambuilder-db.glitch.me/recent')
+            .get(`${db_link}/recent`)
             .then(res => {
                 setRecentPlayers(res.data);
             })
